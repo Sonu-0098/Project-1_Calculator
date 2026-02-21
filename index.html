@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="outputscreen" class="outputscreen" disabled>
+        <div id="buttons">
+            <button onclick ="clearAllValue()" id="operator">AC</button>
+            <button onclick ="deleteLast()" id="operator"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick ="valueFunction('%')" id="operator"><i class="fa-solid fa-percent"></i></button>
+            <button onclick ="valueFunction('/')" id="operator"><i class="fa-solid fa-divide"></i></button>
+            <button onclick ="valueFunction('7')">7</button>
+            <button onclick ="valueFunction('8')">8</button>
+            <button onclick ="valueFunction('9')">9</button>
+            <button onclick ="valueFunction('*')" id="operator"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick ="valueFunction('4')">4</button>
+            <button onclick ="valueFunction('5')">5</button>
+            <button onclick ="valueFunction('6')">6</button>
+            <button onclick ="valueFunction('-')" id="operator"><i class="fa-solid fa-minus"></i></button>
+            <button onclick ="valueFunction('1')">1</button>
+            <button onclick ="valueFunction('2')">2</button>
+            <button onclick ="valueFunction('3')">3</button>
+            <button onclick ="valueFunction('+')" id="operator"><i class="fa-solid fa-plus"></i></button>
+            <button onclick ="valueFunction('0')">0</button>
+            <button onclick ="valueFunction('.')">.</button>
+            <button onclick ="calculate()" id="eual-btn">=</button>
+        </div>
+    </div>
+<!--Link javascript file-->
+
+<script src="script.js"></script>
+</body>
+</html>
